@@ -10,12 +10,12 @@ docker exec -it netpedia /bin/bash
 sudo su
 apt update && apt upgrade -y && apt dist-upgrade -y && update-grub && reboot
 dpkg-reconfigure tzdata
-apt install tmux
+apt install -y tmux bzip2 gzip coreutils screen curl net-tools
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1
 ```
 
 tmux : https://awangga.github.io/nopanel/tmux/
 
 ```sh
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt install -y bzip2 gzip coreutils screen curl net-tools
 wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/myvpn.sh && chmod +x myvpn.sh && ./myvpn.sh 
 ```
