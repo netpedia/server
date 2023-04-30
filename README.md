@@ -11,9 +11,12 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt dist-upgrade -y
 sudo update-grub
-sudo reboot
+sudo dpkg-reconfigure tzdata
 sudo apt install tmux
+sudo reboot
 ```
+
+tmux : https://awangga.github.io/nopanel/tmux/
 
 ```sh
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
