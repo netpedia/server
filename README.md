@@ -7,23 +7,15 @@ docker exec -it netpedia /bin/bash
 ```
 
 ```sh
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt dist-upgrade -y
-sudo update-grub
-sudo dpkg-reconfigure tzdata
-sudo apt install tmux
-sudo reboot
+sudo su
+apt update && apt upgrade -y && apt dist-upgrade -y && update-grub && reboot
+dpkg-reconfigure tzdata
+apt install tmux
 ```
 
 tmux : https://awangga.github.io/nopanel/tmux/
 
 ```sh
-sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
-sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
-sudo apt install -y bzip2 gzip coreutils screen curl
-sudo apt install net-tools
-wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/myvpn.sh
-chmod +x myvpn.sh
-sudo ./myvpn.sh 
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt install -y bzip2 gzip coreutils screen curl net-tools
+wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/myvpn.sh && chmod +x myvpn.sh && ./myvpn.sh 
 ```
