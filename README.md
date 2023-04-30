@@ -2,7 +2,7 @@
 Server Installation
 
 ```sh
-docker run -d --net iteungwebnet --ip 172.18.0.38 --name netpedia -e TZ=Asia/Jakarta ubuntu/nginx
+docker run -d --net iteungwebnet --ip 172.18.0.38 --name netpedia -e TZ=Asia/Jakarta ubuntu/nginx:1.18-20.04_beta
 docker exec -it netpedia /bin/bash
 ```
 
