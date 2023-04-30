@@ -7,20 +7,21 @@ docker exec -it netpedia /bin/bash
 ```
 
 ```sh
-apt-get update
-apt-get upgrade -y
-apt dist-upgrade -y
-update-grub
-reboot
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt dist-upgrade -y
+sudo update-grub
+sudo reboot
+sudo apt install tmux
 ```
 
 ```sh
-sysctl -w net.ipv6.conf.all.disable_ipv6=1
-sysctl -w net.ipv6.conf.default.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 apt update
-apt install -y bzip2 gzip coreutils screen curl
-apt install net-tools
+sudo apt install -y bzip2 gzip coreutils screen curl
+sudo apt install net-tools
 wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/myvpn.sh
 chmod +x myvpn.sh
-./myvpn.sh 
+sudo ./myvpn.sh 
 ```
