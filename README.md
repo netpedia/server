@@ -18,7 +18,6 @@ sudo apt install tmux
 ```sh
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
-apt update
 sudo apt install -y bzip2 gzip coreutils screen curl
 sudo apt install net-tools
 wget https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/myvpn.sh
